@@ -34,6 +34,5 @@ function print(message){
 	console.log(message);
 }
 print("hello");
-
 var password ="123456";
 console.log (password=="123456"?"ALLOW":"DENY");
