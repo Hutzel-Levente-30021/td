@@ -1,0 +1,27 @@
+.message{
+	border: 1px solid #777;
+	padding: 7px;
+	margin: 5px;
+}
+
+
+input{
+	font-size: 22px;
+	border: 2px solid aqua;
+}
+
+#result{
+	color: rgb(255, 0, 0);
+}
+
+.process-button{
+	border: 1px solid #777;
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+
+.process-button:hover{
+	background-color: #999;
+	cursor: pointer;
+}
