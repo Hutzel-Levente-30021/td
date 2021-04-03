@@ -3,11 +3,11 @@ var app = new Vue({
   data: {
     dataBits: [],
     status: '',
-    numberOfDataBits: 2,
+    numberOfDataBits: 4,
 	message: '',
   },
   created: function () {
-    this.initDataBits(2);
+    this.initDataBits(4);
   },
   methods: {
     initDataBits: function () {
@@ -33,27 +33,6 @@ var app = new Vue({
     },
     encode: function (bits) {
 	  var returnFunction = [];
-	  if(this.numberOfDataBits==2){
-		console.log(this.numberOfDataBits);
-		var c4 = this.parity(
-			parseInt(bits[1].data)
-		);
-		var c2 = this.parity(
-			parseInt(bits[0].data)
-		);
-		var c1 = this.parity(
-			parseInt(bits[0].data) + parseInt(bits[1].data)
-		);
-		this.message = 'Control bits: ' + c1 + ',' + c2 + ',' + c4 + ' Hamming code: ' + c1 + ',' + c2 + ',' + parseInt(bits[0].data) + ',' + c4 + ',' + 
-			parseInt(bits[1].data);
-		returnFunction = [
-			c1,
-			c2,
-			parseInt(bits[0].data),
-			c4,
-			parseInt(bits[1].data)
-		];
-	  }
 	  if(this.numberOfDataBits==4){
 		console.log(this.numberOfDataBits);
 		var c4 = this.parity(
@@ -75,36 +54,6 @@ var app = new Vue({
 			parseInt(bits[1].data),
 			parseInt(bits[2].data),
 			parseInt(bits[3].data)
-		];
-	  }
-	  if(this.numberOfDataBits==6){
-		  console.log(this.numberOfDataBits);
-		var c8 = this.parity(
-			parseInt(bits[4].data) + parseInt(bits[5].data)
-		);
-		var c4 = this.parity(
-			parseInt(bits[1].data) + parseInt(bits[2].data) + parseInt(bits[3].data)
-		);
-		var c2 = this.parity(
-			parseInt(bits[0].data) + parseInt(bits[2].data) + parseInt(bits[3].data) + parseInt(bits[5].data)
-		);
-		var c1 = this.parity(
-			parseInt(bits[0].data) + parseInt(bits[1].data) + parseInt(bits[3].data) + parseInt(bits[4].data)
-		);
-		this.message = 'Control bits: ' + c1 + ',' + c2 + ',' + c4 + ',' + c8 + ' Hamming code: ' + c1 + ',' + c2 + ',' + parseInt(bits[0].data) + ',' + c4 + ',' + 
-			parseInt(bits[1].data) + ',' + parseInt(bits[2].data) + ',' + parseInt(bits[3].data)  + ',' + c8 + ',' +
-			parseInt(bits[4].data) + ',' + parseInt(bits[5].data);
-		returnFunction = [
-			c1,
-			c2,
-			parseInt(bits[0].data),
-			c4,
-			parseInt(bits[1].data),
-			parseInt(bits[2].data),
-			parseInt(bits[3].data),
-			c8,
-			parseInt(bits[4].data),
-			parseInt(bits[5].data)
 		];
 	  }
 	  if(this.numberOfDataBits==8){
