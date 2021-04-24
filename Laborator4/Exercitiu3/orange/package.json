@@ -1,0 +1,21 @@
+{
+  "name": "orange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib.js",
+  "scripts": {
+    "start-orange": "node orange.js",
+    "prettier": "prettier --config ./.prettierrc --list-different \"**/*{.html,.js,.json,.css}\" --write"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "bits-utils": "^2.0.0",
+    "fs": "0.0.1-security"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "prettier": "^2.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
