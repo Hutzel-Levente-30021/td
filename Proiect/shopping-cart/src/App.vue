@@ -4,6 +4,7 @@
     <router-link :class="{active: $route.name === 'Cart'}" to="/cart">Coș</router-link> |
     <router-link :class="{active: $route.name === 'About'}" to="/about">Contact</router-link>
   </div>
+  <img src="@/assets/books1.jpg" />
   <router-view/>
 </template>
 
@@ -32,6 +33,11 @@ html, body{
 
 body{
   background-color: rgba(0, 255, 0, 0.8);
+}
+
+img{
+  width: 100%;
+  height: 300px;
 }
 
 #nav{
