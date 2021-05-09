@@ -94,7 +94,7 @@ export default {
 .drawer{
     width: 95vw;
     height: 100vh;
-    background-color: white;
+    background-color: darkgreen;
     position: fixed;
     top: 0;
     left: -105vw;
@@ -132,12 +132,14 @@ export default {
     p.description{
         padding: 20px;
         line-height: 1.5rem;
+        color: white;
     }
 
     table, td{
-        border: 1px solid black;
+        border: 1px solid white;
         border-collapse: collapse;
         text-align: left;
+        color: white;
     }
     
 
@@ -149,7 +151,13 @@ export default {
             border-radius: 5px;
             margin: 0 5px 50px 5px;
             cursor: pointer;
+            background-color: lightblue;
+            color: green;
         }
+    }
+
+    h4{
+        color: white;
     }
 }
 

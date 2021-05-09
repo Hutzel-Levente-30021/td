@@ -27,7 +27,7 @@
         margin: 10px;
         padding: 10px;
         border-radius: 5px;
-        background-color: white;
+        background-color: darkgreen;
         box-shadow: 0 0 5px gray;
 
         img{
@@ -35,15 +35,16 @@
         }
 
         h5.price{
-            color: gray;
+            color: lightgray;
         }
 
         p.description{
             font-size: .85rem;
+            color: white;
         }
 
         p.text-muted{
-            color: gray;
+            color: lightgray;
         }
     }
 

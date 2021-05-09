@@ -15,3 +15,9 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+    h3{
+        color: white;
+    }
+</style>

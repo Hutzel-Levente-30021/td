@@ -1,5 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    Hutzel Levente
+    <p>Tel: +407<span style="filter:blur(5px)">58704362</span></p>
   </div>
 </template>
