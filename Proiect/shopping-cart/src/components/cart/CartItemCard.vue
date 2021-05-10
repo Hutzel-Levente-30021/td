@@ -7,6 +7,7 @@
                 <h4>În coș: {{ product.quantity }}</h4>
                 <h4>Total: {{ item_cost.toFixed(2) }} lei</h4>
             </div>
+            <button class="removeAProduct" @click="removeOneProductFromCart()">Șterge din coș</button>
         </div>
 
         <p>{{ description }}</p>
@@ -16,6 +17,11 @@
 <script>
 export default {
     props: ['product'],
+    methods: {
+        removeOneProductFromCart(){
+            this.$store.commit('removeOneProductFromCart', this.product)
+        }
+    },
     computed: {
         description(){
             return this.product.description
@@ -49,6 +55,18 @@ export default {
 
     p{
         color: white;
+    }
+
+    button.removeAProduct{
+            width: 150px;
+            height: 50px;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 5px 50px 5px;
+            cursor: pointer;
+            background-color: lightblue;
+            color: green;
     }
 }
 </style>

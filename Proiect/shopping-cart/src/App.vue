@@ -1,10 +1,10 @@
 <template>
+  <img src="@/assets/books1.jpg" />
   <div id="nav">
     <router-link :class="{active: $route.name === 'Home'}" to="/">Stoc</router-link> |
     <router-link :class="{active: $route.name === 'Cart'}" to="/cart">Coș</router-link> |
     <router-link :class="{active: $route.name === 'About'}" to="/about">Contact</router-link>
   </div>
-  <img src="@/assets/books1.jpg" />
   <router-view/>
 </template>
 
@@ -44,12 +44,12 @@ img{
   padding: 10px;
   width: 100%;
   height: 30px;
-  background-color: white;
+  background-color: rgba(0, 255, 0, 0.8);
   line-height: 30px;
 
   a{
     font-weight: bold;
-    color: darkgray;
+    color: black;
     text-decoration: none;
     margin: 0 5px 0 5px;
     font-size: 1.25rem;

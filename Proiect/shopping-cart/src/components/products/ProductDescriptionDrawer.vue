@@ -11,31 +11,31 @@
             <h3 class="text-center">{{ product.title }}</h3>
             <table>
                 <tr>
-                    <td><span style="color: gray">Autor</span></td>
+                    <td>Autor</td>
                     <td>{{ product.author }}</td>
                 </tr>
                 <tr>
-                    <td><span style="color: gray">Editură</span></td>
+                    <td>Editură</td>
                     <td>{{ product.brand }}</td>
                 </tr>
                 <tr>
-                    <td><span style="color: gray">Gen</span></td>
+                    <td>Gen</td>
                     <td>{{ product.genre }}</td>
                 </tr>
                 <tr>
-                    <td><span style="color: gray">Subgen</span></td>
+                    <td>Subgen</td>
                     <td>{{ product.subgenre }}</td>
                 </tr>
                 <tr>
-                    <td><span style="color: gray">Limbă</span></td>
+                    <td>Limbă</td>
                     <td>{{ product.language }}</td>
                 </tr>
                 <tr>
-                    <td><span style="color: gray">Format</span></td>
+                    <td>Format</td>
                     <td>{{ product.format }}</td>
                 </tr>
                 <tr>
-                    <td><span style="color: gray">ISBN-ISSN</span></td>
+                    <td>ISBN-ISSN</td>
                     <td>{{ product.isbn }}</td>
                 </tr>
             </table>
@@ -133,6 +133,10 @@ export default {
         padding: 20px;
         line-height: 1.5rem;
         color: white;
+    }
+
+    img{
+        height: 100%;
     }
 
     table, td{

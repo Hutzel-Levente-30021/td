@@ -51,6 +51,26 @@ export default createStore({
       if(cart){
         state.cart = JSON.parse(cart)
       }
+    },
+    removeOneProductFromCart(state, product){
+      let item = state.cart.find(i => i.id === product.id)
+
+      if(item){
+        if(item.quantity > 0){
+          item.quantity = 0
+        } else {
+          state.cart = state.cart.filter(i => i.id !== product.id)
+        }
+      }
+      updateLocalStorage(state.cart)
+    },
+    clearCart(state){
+      const cart = localStorage.getItem('cart')
+      if(cart){
+        state.cart = JSON.parse(cart)
+        state.cart = []
+      }
+      updateLocalStorage(state.cart)
     }
   },
   actions: {

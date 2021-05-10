@@ -1,6 +1,18 @@
 <template>
   <div class="about">
-    Hutzel Levente
-    <p>Tel: +407<span style="filter:blur(5px)">58704362</span></p>
+    <p>Contact:</p>
+    <p>Hutzel Levente</p>
+    <p>Adresă: Str. <span style="filter:blur(5px)">Prahovei</span> nr. <span style="filter:blur(5px)">7.</span>, Mun. Satu Mare, jud. Satu Mare</p>
+    <p>Tel: +40<span style="filter:blur(5px)">758704362</span></p>
+    <p>Adresă e-mail: levente.hutzel16@gmail.com</p>
   </div>
 </template>
+
+
+<style lang="scss">
+  p{
+    font-size: 1.5rem;
+  }
+
+
+</style>
