@@ -74,6 +74,10 @@ export default {
     background: #06D85F;
     }
 
+    a{
+        color: white;
+    }
+
     .overlay {
     position: fixed;
     top: 0;

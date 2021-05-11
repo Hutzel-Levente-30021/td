@@ -3,7 +3,7 @@
   <div id="nav">
     <router-link :class="{active: $route.name === 'Home'}" to="/">Stoc</router-link> |
     <router-link :class="{active: $route.name === 'Cart'}" to="/cart">Coș</router-link> |
-    <router-link :class="{active: $route.name === 'About'}" to="/about">Contact</router-link>
+    <router-link :class="{active: $route.name === 'Contact'}" to="/contact">Contact</router-link>
   </div>
   <router-view/>
 </template>
