@@ -1,6 +1,6 @@
 # shopping-cart
 
-![Alt Text](/src/assets/screenshots/cart.jpg)
+![Alt Text](/assets/screenshots/cart.jpg)
 
 ## Project setup
 ```
