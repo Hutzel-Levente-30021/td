@@ -25,4 +25,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Demo
 
-![Alt text](/src/assets/screenshots/home.jpg)
+![Alt text](https://github.com/Hutzel-Levente-30021/td/blob/main/Proiect/shopping-cart/src/assets/screenshots/cart.jpg)
