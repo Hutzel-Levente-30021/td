@@ -1,7 +1,5 @@
 # shopping-cart
 
-![Alt Text](/assets/screenshots/cart.jpg)
-
 ## Project setup
 ```
 npm install
