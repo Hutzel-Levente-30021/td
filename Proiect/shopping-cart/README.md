@@ -25,4 +25,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Demo
 
-![Alt text](/assets/screenshots/home.jpg)
+![Alt text](/src/assets/screenshots/home.jpg)
