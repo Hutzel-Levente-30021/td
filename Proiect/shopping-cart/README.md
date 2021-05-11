@@ -1,4 +1,4 @@
-# shopping-cart
+# bookstoreSM.ro
 
 ## Project setup
 ```
